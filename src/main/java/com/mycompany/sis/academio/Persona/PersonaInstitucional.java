@@ -10,7 +10,7 @@ import com.mycompany.sis.academio.Personas.Personas;
  *
  * @author User
  */
-public abstract class PersonaInstitucional extends Personas{
+public /*abstract*/ class PersonaInstitucional extends Personas{
  private String correoInstitucional;
     //constructor
 
@@ -32,5 +32,7 @@ public abstract class PersonaInstitucional extends Personas{
         return "PersonalInstitucional{" + "correoInstitucional=" + correoInstitucional + super.toString()+'}';
     }
     
-    public abstract boolean verificarCedula();   
+     public boolean verificarCedula(){
+    return true;
+    }
 }
